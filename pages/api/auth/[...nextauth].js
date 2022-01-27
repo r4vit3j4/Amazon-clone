@@ -8,4 +8,5 @@ export default nextAuth({
       clientSecret: "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",
     }),
   ],
+  secret: process.env.SECRET,
 });
