@@ -29,10 +29,11 @@ export default function Home({ products }) {
 }
 
 export async function getServerSideProps(context) {
-  const products = await fetch("https://fakestoreapi.com/products").then(
-    (res) => res.json()
+  const products = await fetch("https://jsonkeeper.com/b/TE2Q").then((res) =>
+    res.json()
   );
   return { props: { products } };
 }
 
 // https://fakestoreapi.com/products
+// https://jsonkeeper.com/b/TE2Q
